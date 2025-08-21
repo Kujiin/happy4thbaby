@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Monthsary 🌸</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+      text-align: center;
+      padding: 20px;
+      color: #444;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #ff69b4;
+      animation: bounce 2s infinite;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #ff1493;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 25px 0;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1) rotate(2deg);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    }
+
+    button {
+      background: #ff69b4;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background: #ff85c1;
+    }
+
+    #loveLetter {
+      display: none;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 25px;
+      background: #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      font-size: 1.1em;
+      color: #444;
+      line-height: 1.6;
+      animation: fadeIn 2s ease;
+      text-align: left;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #fff;
+      background: rgba(255, 105, 180, 0.7);
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .flower {
+      position: absolute;
+      width: 50px;
+      opacity: 0.7;
+      animation: float 10s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-40px) rotate(20deg); }
+      100% { transform: translateY(0) rotate(0); }
+    }
+
+    /* Typewriter intro */
+    .typewriter {
+      font-size: 1.3em;
+      color: #fff;
+      margin-top: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #fff;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.8s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      0%, 50% { border-color: transparent }
+      50%, 100% { border-color: white }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌸 Happy Monthsary, Love! 🌸</h1>
+  <div class="typewriter">To my one and only, my love, my forever 💕</div>
+
+  <h2>Some of Our Memories Together 💑</h2>
+  <div class="gallery">
+    <!-- Replace src with your actual photo file paths -->
+    <img src="photo1.jpg" alt="Us 1">
+    <img src="photo2.jpg" alt="Us 2">
+    <img src="photo3.jpg" alt="Us 3">
+  </div>
+
+  <button onclick="document.getElementById('loveLetter').style.display='block'">
+    Read My Letter 🌸
+  </button>
+
+  <div id="loveLetter">
+    Hi love, happy monthsary! 💖  
+    I just want you to know how much I appreciate you every single day.  
+    Thank you for being my safe place, my happiness, and my forever.  
+    Bisag layo ta usahay, or busy, always remember nga I’m yours ra gyud.  
+    You make my world brighter and my heart fuller.  
+
+    I love you so much, sobra pa sa words nga kaya isulti.  
+    Ikaw ra jud akong gusto, karon ug hangtod2. 🌹💍  
+
+    Love,  
+    – Your baby Cyrus 💕
+  </div>
+
+  <footer>Made with ❤️ by your baby Cyrus</footer>
+
+  <!-- Floating flowers (replace flower.png with your own) -->
+  <img src="flower.png" class="flower" style="top: 10%; left: 5%;">
+  <img src="flower.png" class="flower" style="top: 30%; right: 10%;">
+  <img src="flower.png" class="flower" style="bottom: 15%; left: 20%;">
+  <img src="flower.png" class="flower" style="bottom: 10%; right: 25%;">
+
+</body>
+</html>
